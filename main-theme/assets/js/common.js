@@ -1,3 +1,7 @@
-const test = {};
+const test = {
+	test: () => {
+		console.log( 'test' );
+	},
+};
 
-export default test;
+console.log( test );

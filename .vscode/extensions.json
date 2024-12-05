@@ -1,3 +1,6 @@
 {
-  "recommendations": ["bmewburn.vscode-intelephense-client"]
+	"recommendations": [
+		"bmewburn.vscode-intelephense-client",
+		"persoderlind.vscode-phpcbf"
+	]
 }
