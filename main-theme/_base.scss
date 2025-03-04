@@ -1,0 +1,27 @@
+@use 'sass:math';
+@use '_variables' as *;
+@use '_media_query' as *;
+
+html {
+  background: #fff;
+  font-size: 10px;
+  @include liquid-starts {
+    font-size: math.div(10, $wrapper-width-num) * 100vw;
+  }
+  @include sp {
+    font-size: math.div(10, $mobile_width-num) * 100vw;
+  }
+}
+
+body {
+  font-size: math.div($font-size-num, 10) * 1rem;
+}
+
+// Remove below
+.wrapper {
+  width: $wrapper-width;
+  margin: 0 auto;
+  @include liquid-starts {
+    width: 100%;
+  }
+}
