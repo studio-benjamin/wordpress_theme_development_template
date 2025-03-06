@@ -4,3 +4,5 @@ main-theme/**/*.css
 main-theme/**/*.css.map
 
 .DS_Store
+.github/act/.secrets
+theme/

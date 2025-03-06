@@ -6,4 +6,4 @@
 
 `docker-compose up -d`
 
-Now you can access the app at `http://localhost:8001`
+Now you can access the app at `http://localhost:XXXX`

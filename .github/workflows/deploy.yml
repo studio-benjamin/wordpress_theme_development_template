@@ -1,0 +1,33 @@
+on:
+  push:
+    branches:
+      - master
+name: Deploy the theme
+jobs:
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up node
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20
+      - name: Install Sass
+        run: |
+          npm install -g sass
+      - name: Chmod bundle_theme.sh
+        run: |
+          chmod +x ./bundle_theme.sh
+      - name: Bundle theme
+        run: |
+          ./bundle_theme.sh
+      - name: Upload
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./theme/
+          server-dir: ${{ secrets.FTP_DIR }}
+          dangerous-clean-slate: true
