@@ -1,6 +1,6 @@
-@use 'sass:math';
-@use '_variables' as *;
-@use '_media_query' as *;
+@use "sass:math";
+@use "_variables" as *;
+@use "_media_query" as *;
 
 html {
   background: #fff;
@@ -17,7 +17,6 @@ body {
   font-size: math.div($font-size-num, 10) * 1rem;
 }
 
-// Remove below
 .wrapper {
   width: $wrapper-width;
   margin: 0 auto;
