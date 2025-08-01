@@ -3,6 +3,7 @@
 @use "_media_query" as *;
 
 html {
+  scroll-padding-top: math.div($nav-height-num, 10) * 1rem;
   background: #fff;
   font-size: 10px;
   @include liquid-starts {

@@ -9,5 +9,12 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
-@use '_base' as *;
-@use '_media_query' as *;
+@use "_base" as *;
+@use "_media_query" as *;
+
+.global-nav {
+  height: math.div($nav-height-num, 10) * 1rem;
+  @include sp {
+    height: math.div($nav-height-num-sp, 10) * 1rem;
+  }
+}
