@@ -6,7 +6,7 @@
 ## Run
 
 `docker-compose up -d`
-`./watch_sass.sh`
+`pnpm run dev`
 
 Now you can access the app at `http://localhost:XXXX`
 
