@@ -84,5 +84,6 @@
     "zip",
     "zlib",
     "wordpress"
-  ]
+  ],
+  "cSpell.words": ["phpmyadmin", "ress", "rootwordpress"]
 }

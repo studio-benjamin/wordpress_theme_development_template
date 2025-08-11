@@ -14,9 +14,36 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 @use "_media_query" as *;
 @use "_variables" as *;
 
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+* {
+  line-height: 1.7;
+  letter-spacing: 0.08em;
+}
+
+::before,
+::after {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .global-nav {
-  height: math.div($nav-height-num, 10) * 1rem;
-  @include sp {
-    height: math.div($nav-height-num-sp, 10) * 1rem;
+  .wrapper {
+    height: math.div($nav-height-num, 10) * 1rem;
+    @include sp {
+      height: math.div($nav-height-num-sp, 10) * 1rem;
+    }
   }
 }
