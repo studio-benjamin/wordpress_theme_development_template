@@ -2,3 +2,6 @@ extends:
   - plugin:@wordpress/eslint-plugin/recommended-with-formatting
 rules:
   no-console: off
+env:
+  browser: true
+  jquery: true
