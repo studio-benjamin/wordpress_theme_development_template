@@ -39,6 +39,10 @@ a {
   color: inherit;
 }
 
+address {
+  font-style: normal;
+}
+
 .global-nav {
   .wrapper {
     height: math.div($nav-height-num, 10) * 1rem;
